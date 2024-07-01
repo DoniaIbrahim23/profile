@@ -1,0 +1,281 @@
+body{
+    font-family: 'ping', sans-serif; /* استخدام الخط المخصص */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    background-color: #7700bc;
+    left: 0px;
+    z-index: 999;
+    display: block;
+    color: #fff;
+    margin: auto;
+}
+
+.profile_name {
+    float: left;
+    padding-left: 2cm;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 5%;
+    
+}
+
+.profile_name .contact_info {
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ 
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.contact_info img {
+    width: 25px;
+    margin-right: 10px;
+    float: left;
+}
+
+.links{
+     float: right;
+     padding-right: 1cm;
+     margin-top: -5%;
+     position: absolute;
+     margin-left: 40%;
+   
+}
+
+.menu {
+    color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* مش شغال مش عارفة ليه */
+.menu :hover{
+    color: #fff;
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+
+#about_me .container{
+    display: block;
+    margin-top: 15%;
+    display: flex;
+}
+
+
+.profile_image img {
+    width: 550px;
+    height: fit-content;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.text{
+   
+    margin-top: -5%;
+    margin-left: 15%;
+}
+.text h1{
+    font-size: 65px;
+    margin-top: 90px;
+    color: #7600bc;
+    display: block;
+}
+
+.text p{
+    font-size: 25px;
+    color: rgb(128,128,128);
+    display: block;
+}
+
+#Skills {
+    margin-top: 5%;
+    width: 100%;
+
+}
+
+#Skills h2{
+    color: #7600bc;
+
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+
+#projects{
+    margin-top: 7.5%;
+    width: 100%;
+}
+
+#projects h2{
+    color: #7600bc;
+}
+
+.project_name{
+    margin-left: 5%;
+}
+
+hr{
+    width: 60%;
+}
+
+
+.recommendation {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#Recommendations .container h2 {
+    color: #7700bc;
+    font-size: 2em;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: -85%;
+    margin-top: 5%;
+ 
+} 
+
+
+
+
+
+
+.recommendations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recommendation {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    text-align: left;
+    width: 90%;
+    
+}
+
+.recommendation:hover {
+    transform: scale(1.02);
+} 
+
+.recommendation-card p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+} 
+
+
+#popup .container {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.recommendation-form {
+    margin-top: 20px;
+}
+
+.recommendation-form input, .recommendation-form textarea {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.recommendation-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #7e57c2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3%;
+} 
+
+
+/* input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    width: 100%;
+}
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+} */
+
+.form-group{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #9c27b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.home-icon img {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
